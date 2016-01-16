@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-
 <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
 <link href='example/example.css' rel='stylesheet' type='text/css' />
 <script src="js/jquery-1.7.min.js"></script>
@@ -19,27 +18,36 @@
       <ul class="menu">
         <li><a href="index.html">Strona główna</a></li>
         <li class="current"><a href="plan.html">Plan treningowy</a></li>
-        <li><a href="cwiczenia.html">Ćwiczenia</a></li>
         <li><a href="kontakt.html">Zadaj pytanie</a></li>
       </ul>
     </nav>
   </header>
   <div class='parent'>
-    <div class='wrapper'>
+    <div data=important="left-rollbacks" class='wrapper'>
       <div id='left-rollbacks' class='container'>
-        <div>
-		<center><font color="black">PRZYSIADY</font></center>
-		<img src="images/przysiad.jpg" width="400" height="200" alt="some_text">
-		<iframe width="400" height="200" src="https://www.youtube.com/embed/uqlcNUrDAdE"></iframe>
-		</div>
+
       </div>
       <div id='right-rollbacks' class='container'>
+	  <div id="przysiady">
+	  <center><font color="black">PRZYSIADY</font></center>
+		<img src="images/przysiad.jpg" width="400" height="200" alt="some_text">
+		<iframe width="400" height="200" src="https://www.youtube.com/embed/uqlcNUrDAdE"></iframe>
       </div>
     </div>
     <pre>
-
+<button class="download">ZAPISZ</button>
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script>
+$(function(){
+    $('.download').on('click', function(){
+		//$(this).closest('.wrapper').data('important');
+		alert($(this).closest('.wrapper').data('important'));
+    });
+});
+</script>
 <script src='dist/dragula.js'></script>
 <script src='example/example.min.js'></script>
+</div>
 </div>
 <script>Cufon.now();</script>
 </body>
