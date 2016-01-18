@@ -195,6 +195,15 @@ header {
 	overflow:hidden;
 	padding-bottom:17px;
 }
+
+komunikat{
+  font-size: 20px;
+  color: #01a5ca;
+  font-weight: bolder;
+margin-top: 10%;
+
+}
+
 h1 {
 	float:left;
 	margin:23px 0 0px 29px;
